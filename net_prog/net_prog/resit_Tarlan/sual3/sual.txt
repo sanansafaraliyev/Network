@@ -1,0 +1,11 @@
+Zeromq, push-pull modeli.
+Üç hissədən ibarət olur (producer, consumer, result_collector).
+Deməli birinci hissədə fayldan itemlərin adlarını oxuyur.
+Faylı iki part-a bölüb ikinci hissəyə göndərir.
+İkinci hissədə hər part üçün orda olan itemləri götürür,
+sonra hər itemdən neçə dənə olduğunu sayıb belə bir dictionary düzəldir:
+{İtem_name: item_count}.
+Sonra bu dictionaryləri result_collectora göndərir. 
+Result collector bu dictionaryləri birləşdirir, 
+əgər birləşəndə hansısa itemlərin sayı artıbsa, 
+onu update edib göndərir yenə 1-ci hissəyə, yəni producerə.

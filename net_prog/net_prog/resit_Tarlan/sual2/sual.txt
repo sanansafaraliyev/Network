@@ -1,0 +1,9 @@
+Deməli, students, courses, marks tableları var.
+Students-də (stud_id, name, surname, email),
+Courses-də (course_id, title),
+marks-da (mark_id, stud_id, course_id, mark) columnları var.
+Bu tablelarnan işləmək üçün bir neçə route yazırsan.
+Birinci student yaratmaq və silmək üçün.
+İkinci kursu yaratmaq və silmək üçün.
+Üçüncü student-in adına soyadına və kursun title-na görə mark əlavə etmək.
+Axırıncı da studentin adına, soyadına görə onun kurslarsan aldığı bütün markları göstərən route.
